@@ -23,6 +23,9 @@ Please visit this repository's [Github issue tracker](https://github.com/OneSign
 
 For account issues and support please contact OneSignal support from the [OneSignal.com](https://onesignal.com) dashboard.
 
+#### Demo Project
+To make things easier, we have published a demo project in the `samples/` folder of this repository.
+
 #### Supports:
 * iOS 7 - 12.2
 * Android 4.0.3 (API Level 15) through 9.0 (API Level 28), and derivatives such as Amazon ADM

@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032850A51FCA0A1500690553 /* OneSignal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032850A41FCA0A1500690553 /* OneSignal.framework */; };
+		37E6B2B419D4F97A00D0C601 /* OneSignal.mm in Sources */ = {isa = PBXBuildFile; fileRef = 37E6B2B319D4F97A00D0C601 /* OneSignal.mm */; };
+		37F31D311A76F22E002980D1 /* OneSignalCoronaDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F31D301A76F22E002980D1 /* OneSignalCoronaDelegate.m */; };
+		A48EF70B1724FCEB008DEB9B /* plugin_OneSignal.lua in Sources */ = {isa = PBXBuildFile; fileRef = A48EF7061724F406008DEB9B /* plugin_OneSignal.lua */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4E253B4166D6FB300DCDC2C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		032850A41FCA0A1500690553 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = "../../../../../OneSignal-iOS-SDK-1x/iOS_SDK/Framework/OneSignal.framework"; sourceTree = "<group>"; };
+		03B3309E22F92D0C00DF8ABE /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		37E6B2B219D4F97A00D0C601 /* OneSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSignal.h; sourceTree = "<group>"; };
+		37E6B2B319D4F97A00D0C601 /* OneSignal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OneSignal.mm; sourceTree = "<group>"; };
+		37F31D2F1A76F13C002980D1 /* OneSignalCoronaDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneSignalCoronaDelegate.h; sourceTree = "<group>"; };
+		37F31D301A76F22E002980D1 /* OneSignalCoronaDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSignalCoronaDelegate.m; sourceTree = "<group>"; };
+		9D1BD9582374D6E900A064F7 /* OneSignalHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalHelper.h; sourceTree = "<group>"; };
+		9D1BD9592374D6E900A064F7 /* OneSignalLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalLocation.h; sourceTree = "<group>"; };
+		9D1BD95A2374D6E900A064F7 /* OneSignalTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalTracker.h; sourceTree = "<group>"; };
+		A48EF7061724F406008DEB9B /* plugin_OneSignal.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = plugin_OneSignal.lua; path = ../shared/plugin_OneSignal.lua; sourceTree = "<group>"; };
+		A4E253B6166D6FB300DCDC2C /* libplugin_OneSignal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libplugin_OneSignal.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4E253B3166D6FB300DCDC2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032850A51FCA0A1500690553 /* OneSignal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032850A31FCA0A1500690553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				032850A41FCA0A1500690553 /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A447B609165D72A6009EA762 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				37F31D2F1A76F13C002980D1 /* OneSignalCoronaDelegate.h */,
+				37F31D301A76F22E002980D1 /* OneSignalCoronaDelegate.m */,
+				37E6B2B219D4F97A00D0C601 /* OneSignal.h */,
+				37E6B2B319D4F97A00D0C601 /* OneSignal.mm */,
+				9D1BD9582374D6E900A064F7 /* OneSignalHelper.h */,
+				9D1BD9592374D6E900A064F7 /* OneSignalLocation.h */,
+				9D1BD95A2374D6E900A064F7 /* OneSignalTracker.h */,
+				A48EF7061724F406008DEB9B /* plugin_OneSignal.lua */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+		A484110E15114F700074BD57 = {
+			isa = PBXGroup;
+			children = (
+				03B3309E22F92D0C00DF8ABE /* Config.xcconfig */,
+				A447B609165D72A6009EA762 /* shared */,
+				A484111A15114F700074BD57 /* Products */,
+				032850A31FCA0A1500690553 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A484111A15114F700074BD57 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4E253B6166D6FB300DCDC2C /* libplugin_OneSignal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4E253B5166D6FB300DCDC2C /* plugin_OneSignal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4E253BF166D6FB300DCDC2C /* Build configuration list for PBXNativeTarget "plugin_OneSignal" */;
+			buildPhases = (
+				A4E253B2166D6FB300DCDC2C /* Sources */,
+				A4E253B3166D6FB300DCDC2C /* Frameworks */,
+				A4E253B4166D6FB300DCDC2C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plugin_OneSignal;
+			productName = plugin_library;
+			productReference = A4E253B6166D6FB300DCDC2C /* libplugin_OneSignal.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A484111015114F700074BD57 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A484111315114F700074BD57 /* Build configuration list for PBXProject "Plugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = A484110E15114F700074BD57;
+			productRefGroup = A484111A15114F700074BD57 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4E253B5166D6FB300DCDC2C /* plugin_OneSignal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4E253B2166D6FB300DCDC2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E6B2B419D4F97A00D0C601 /* OneSignal.mm in Sources */,
+				37F31D311A76F22E002980D1 /* OneSignalCoronaDelegate.m in Sources */,
+				A48EF70B1724FCEB008DEB9B /* plugin_OneSignal.lua in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A484114015114F700074BD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B3309E22F92D0C00DF8ABE /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CORONA_ROOT = /Applications/Corona/Native;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmbeddedFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/shared/include/Corona",
+					"$(CORONA_ROOT)/Corona/shared/include/lua",
+					"$(CORONA_ROOT)/Corona/ios/include/Corona",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/ios/lib",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/Corona/shared/include/Corona ${SRCROOT}/Corona/shared/include/lua ${SRCROOT}/Corona/ios/include/Corona";
+			};
+			name = Debug;
+		};
+		A484114115114F700074BD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B3309E22F92D0C00DF8ABE /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphoneos*]" = "$(ARCHS_STANDARD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CORONA_ROOT = /Applications/Corona/Native;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EmbeddedFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/shared/include/Corona",
+					"$(CORONA_ROOT)/Corona/shared/include/lua",
+					"$(CORONA_ROOT)/Corona/ios/include/Corona",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/ios/lib",
+				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/Corona/shared/include/Corona ${SRCROOT}/Corona/shared/include/lua ${SRCROOT}/Corona/ios/include/Corona";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4E253C0166D6FB300DCDC2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B3309E22F92D0C00DF8ABE /* Config.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CORONA_ROOT = /Applications/Corona/Native;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/../../../../../OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/shared/include/Corona",
+					"$(CORONA_ROOT)/Corona/shared/include/lua",
+					"$(CORONA_ROOT)/Corona/ios/include/Corona",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/ios/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/Corona/shared/include/Corona ${SRCROOT}/Corona/shared/include/lua ${SRCROOT}/Corona/ios/include/Corona";
+			};
+			name = Debug;
+		};
+		A4E253C1166D6FB300DCDC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B3309E22F92D0C00DF8ABE /* Config.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CORONA_ROOT = /Applications/Corona/Native;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/../../../../../OneSignal-iOS-SDK/iOS_SDK/OneSignalSDK/Framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/shared/include/Corona",
+					"$(CORONA_ROOT)/Corona/shared/include/lua",
+					"$(CORONA_ROOT)/Corona/ios/include/Corona",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CORONA_ROOT)/Corona/ios/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/Corona/shared/include/Corona ${SRCROOT}/Corona/shared/include/lua ${SRCROOT}/Corona/ios/include/Corona";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A484111315114F700074BD57 /* Build configuration list for PBXProject "Plugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A484114015114F700074BD57 /* Debug */,
+				A484114115114F700074BD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4E253BF166D6FB300DCDC2C /* Build configuration list for PBXNativeTarget "plugin_OneSignal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4E253C0166D6FB300DCDC2C /* Debug */,
+				A4E253C1166D6FB300DCDC2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A484111015114F700074BD57 /* Project object */;
+}
