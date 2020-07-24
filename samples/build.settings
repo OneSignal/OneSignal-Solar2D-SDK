@@ -1,0 +1,54 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+
+	orientation = {
+		default = "portrait",
+		supported = { "portrait", "portraitUpsideDown", "landscapeLeft", "landscapeRight" }
+	},
+
+	iphone = {
+		plist = {
+			UIBackgroundModes = {"remote-notification"},
+			UIStatusBarHidden = false,
+			UIPrerenderedIcon = true, -- set to false for "shine" overlay
+			--UIApplicationExitsOnSuspend = true, -- uncomment to quit app on suspend
+
+			--[[
+			-- iOS app URL schemes:
+			CFBundleURLTypes = {
+
+			}
+			CFBundleURLSchemes = {
+				"fbXXXXXXXXXXXXXX", -- example scheme for facebook
+				"coronasdkapp", -- example second scheme
+            		}
+	    		--]]
+	    	}
+	},
+
+	plugins = {
+		["plugin.OneSignal"] = {
+			publisherId = "com.onesignal",
+		},
+		["shared.firebase.messaging"] = {
+			publisherId = "com.coronalabs",
+			supportedPlatforms = {
+				android=true
+			},
+	        },
+		["shared.android.support.v4"] = {
+			publisherId = "com.coronalabs",
+			supportedPlatforms = {
+				android=true
+			},
+		},
+		["shared.android.support.v7.cardview"] = {
+			publisherId = "com.coronalabs",
+			supportedPlatforms = {
+				android=true
+			},
+		},
+	},
+}
