@@ -10,10 +10,10 @@
 <p align="center"><img src="https://app.onesignal.com/images/android_and_ios_notification_image.gif" width="500" alt="Unity Notification"></p>
 
 #### Installation and Setup
-See the [Setup Guide](https://documentation.onesignal.com/docs/corona-sdk-setup) for installation and setup instructions.
+See the [Setup Guide](https://documentation.onesignal.com/docs/solar2d-sdk-setup) for installation and setup instructions.
 
 #### API
-See OneSignal's [Solar2D SDK API](https://documentation.onesignal.com/docs/corona-sdk) page for a list of all available methods.
+See OneSignal's [Solar2D SDK API](https://documentation.onesignal.com/docs/solar2d-sdk-setup) page for a list of all available methods.
 
 #### Change Log
 See this repository's [release tags](https://github.com/OneSignal/OneSignal-Solar2D-SDK/releases) for a complete change log of every released version.
