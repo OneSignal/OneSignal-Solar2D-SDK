@@ -1,3 +1,5 @@
+# This SDK is no longer being updated and is slated for archival
+
 <p align="center">
   <img src="https://media.onesignal.com/cms/Website%20Layout/logo-red.svg"/>
 </p>
